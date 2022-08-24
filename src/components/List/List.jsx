@@ -68,7 +68,6 @@ const List = () => {
       contact.name.toLowerCase().includes(normalizedFilter)
     );
   };
-
   const filteredContacts = getFilteredContacts();
 
   return (
