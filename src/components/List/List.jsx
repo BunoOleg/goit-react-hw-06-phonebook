@@ -31,7 +31,7 @@ const Li = styled.li`
   };
   @media (min-width: 1024px) {
     width: 30%;
-  })
+  }
 `;
 
 const Button = styled.button`
