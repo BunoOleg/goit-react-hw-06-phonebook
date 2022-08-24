@@ -2,7 +2,7 @@ import styles from './List.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeItem } from '../../redux/itemsSlice';
 import { getContacts, getFilter } from '../../redux/selectors';
-
+import Notification from '../Notification';
 
 
 
@@ -38,7 +38,8 @@ const List = () => {
             </button>
           </li>
         );
-      })}
+        })}
+      {contacts.length === 0 && <Notification />}
     </ul>
   );
 };
