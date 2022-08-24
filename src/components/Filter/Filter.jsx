@@ -22,7 +22,7 @@ const Input = styled.input`
   };
   @media (min-width: 1024px) {
     width: 30%;
-  })
+  }
 `;
 
 const Filter = () => {

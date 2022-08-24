@@ -26,7 +26,7 @@ const FormHtml = styled.form`
   };
   @media (min-width: 1024px) {
     width: 30%;
-  })
+  }
 `;
 
 const Label = styled.label`
