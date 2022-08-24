@@ -1,22 +1,25 @@
-import styles from './App.module.css';
+import styled from 'styled-components';
 import List from './List';
 import ContactForm from './Form';
-import Toaster from 'react-hot-toast';
 import Filter from './Filter';
+import { Toaster } from 'react-hot-toast';
 
+const Container = styled.div`
+  width: 95vw;
+  margin: 0 auto;
+`;
 
 const App = () => {
-  
-   return (
-      <div className={styles.div}>
-        <h1>Phonebook</h1>
-        <ContactForm  />
-        <h2>Contacts</h2>
-        <Filter/>
-        <List />
-        <Toaster />   
-      </div>
-    );
+  return (
+    <Container>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      <h2>Contacts</h2>
+      <Filter />
+      <List />
+      <Toaster />
+    </Container>
+  );
 };
 
 export default App;

@@ -1,8 +1,11 @@
-import styles from './Notification.module.css';
+import styled from 'styled-components';
 
+const StyledNotification = styled.p`
+  font-weight: 500;
+`;
 
 const Notification = () => {
-  return <p className={styles.p}>Nothing here so far</p>;
+  return <StyledNotification>Nothing here so far</StyledNotification>;
 };
 
 export default Notification;
